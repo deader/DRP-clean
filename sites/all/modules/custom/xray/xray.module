@@ -1,12 +1,12 @@
 <?php 
 /**
 * @file 
-* Помогает  создателям сайтов  и разработчикам модулей исследовать  сайт. 
-*/ 
+ * Помогает  создателям сайтов  и разработчикам модулей исследовать  сайт. 
+ */ 
 
 /** 
-*  Реализация hook_form_alter() выводит идентификатор каждой формы. 
-*/ 
+ *  Реализация hook_form_alter() выводит идентификатор каждой формы. 
+ */ 
 	function xray_form_alter(&$form, &$form_state, $form_id){ 
 		$form['xray_display_form_id'] = array( 
 			'#type'  =>  'item', 
@@ -14,4 +14,14 @@
 			'#markup'  => $form_id, 
 			'#weight'  =>  -100, 
 		); 
+	}
+	
+//  [Код не показан для  экономии места]... 
+/**
+ *  Реализуем hook_help().
+ */ 
+	function xray_help($path, $arg){
+		if  ($path ==  'admin/structure'){
+			return t('This  site has  stuff!'); 
+		} 
 	}
