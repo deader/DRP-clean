@@ -1,3 +1,6 @@
+; $Id$
+
 name =  X-ray 
-description = Показывает внутреннюю структуру и связи  сайта.
+description = Display node structure and relationships site.
+version = 7.x-1.x-dev
 core =  7.x
