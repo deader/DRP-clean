@@ -154,3 +154,20 @@ function mythemetest_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
+
+
+
+/* CUSTOM HOOK*/
+
+/** 
+Х –еализуем hook_theme(). 
+*/ 
+/* function mythemetest_theme()  {  
+	return array( 
+	  'contact_site_form'  => array( 
+		'render element'  =>  'form', 
+		'path'  => drupal_get__path('theme',   'mytheme') . '/templates', 
+		'template'  =>  'contact-site-form',
+	  ),
+	); 
+} */
